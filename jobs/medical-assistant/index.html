@@ -1,114 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
 
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="O89cSkrLFB5agoDsohZTTqxHaRDsW0GHebSEiXBcmFU" />
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification" content="O89cSkrLFB5agoDsohZTTqxHaRDsW0GHebSEiXBcmFU" />
 
-    <!-- SEO + Branding -->
-    <meta name="description" content="Apply for the Medical Assistant position at Valley Kidney Center in Pharr, Texas. Join a compassionate team dedicated to kidney health and patient care.">
+  <!-- SEO + Branding -->
+  <meta name="description" content="Apply for the Medical Assistant position at Valley Kidney Center in Pharr, Texas. Join a compassionate team dedicated to kidney health and patient care.">
 
-    <meta property="og:title" content="Medical Assistant Job – Valley Kidney Center">
-    <meta property="og:description" content="Apply for the Medical Assistant position at Valley Kidney Center in Pharr, Texas.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://valleykidneycenter.netlify.app/jobs/medical-assistant/index.html">
+  <meta property="og:title" content="Medical Assistant Job – Valley Kidney Center">
+  <meta property="og:description" content="Apply for the Medical Assistant position at Valley Kidney Center in Pharr, Texas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://valleykidneycenter.netlify.app/jobs/medical-assistant/">
 
-    <title>Employment Application - Valley Kidney Center</title>
+  <title>Employment Application - Valley Kidney Center</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            text-align: center;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-        label {
-            display: block;
-            margin: 1rem 0 0.5rem;
-        }
-    </style>
-
-    <!-- Google Jobs Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "JobPosting",
-      "title": "Medical Assistant / Medical Office Specialist",
-      "description": "Valley Kidney Center is seeking a Medical Assistant / Medical Office Specialist to support patient care, clinical workflow, and front office operations. Responsibilities include vital signs, chart preparation, patient communication, scheduling, and assisting clinical staff.",
-      "datePosted": "2025-01-25",
-      "validThrough": "2025-12-31",
-      "employmentType": ["FULL_TIME", "PART_TIME"],
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "Valley Kidney Center",
-        "sameAs": "https://valleykidneycenter.netlify.app/"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "214 W. Sam Houston Blvd. Suite B",
-          "addressLocality": "Pharr",
-          "addressRegion": "TX",
-          "postalCode": "78577",
-          "addressCountry": "US"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "USD",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 8.00,
-          "maxValue": 12.00,
-          "unitText": "HOUR"
-        }
-      },
-      "identifier": {
-        "@type": "PropertyValue",
-        "name": "ValleyKidneyCenter",
-        "value": "1"
-      },
-      "directApply": true,
-      "url": "https://valleykidneycenter.netlify.app/"
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    </script>
+
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      background: linear-gradient(135deg, #eef2f7, #ffffff);
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.7);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    nav .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #004aad;
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+
+    nav .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #0f1c3f;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 12px 22px;
+      border-radius: 30px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      transition: 0.25s ease;
+    }
+
+    nav .nav-links a:hover {
+      background: #004aad;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+      transform: translateY(-3px);
+    }
+
+    /* PAGE WRAPPER */
+    section {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    h1, h2 {
+      color: #0f1c3f;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 38px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .job-card {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    iframe {
+      border: 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-top: 30px;
+    }
+
+    footer {
+      margin-top: 100px;
+      padding: 40px 20px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+
+  <!-- Google Jobs Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "Medical Assistant / Medical Office Specialist",
+    "description": "Valley Kidney Center is seeking a Medical Assistant / Medical Office Specialist to support patient care, clinical workflow, and front office operations. Responsibilities include vital signs, chart preparation, patient communication, scheduling, and assisting clinical staff.",
+    "datePosted": "2025-01-25",
+    "validThrough": "2025-12-31",
+    "employmentType": ["FULL_TIME", "PART_TIME"],
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Valley Kidney Center",
+      "sameAs": "https://valleykidneycenter.netlify.app/"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "214 W. Sam Houston Blvd. Suite B",
+        "addressLocality": "Pharr",
+        "addressRegion": "TX",
+        "postalCode": "78577",
+        "addressCountry": "US"
+      }
+    },
+    "baseSalary": {
+      "@type": "MonetaryAmount",
+      "currency": "USD",
+      "value": {
+        "@type": "QuantitativeValue",
+        "minValue": 8.00,
+        "maxValue": 12.00,
+        "unitText": "HOUR"
+      }
+    },
+    "identifier": {
+      "@type": "PropertyValue",
+      "name": "ValleyKidneyCenter",
+      "value": "1"
+    },
+    "directApply": true,
+    "url": "https://valleykidneycenter.netlify.app/jobs/medical-assistant/"
+  }
+  </script>
 
 </head>
 
 <body>
 
-<h1>Valley Kidney Center</h1>
-<p>
-214 W. Sam Houston Blvd. <br>
-Suite B <br>
-Pharr, Texas 78577<br>
-P: 956-971-9121
-</p>
+  <!-- NAVIGATION -->
+  <nav>
+    <a class="logo" href="/index.html">Valley Kidney Center – Savita Koolwal MD</a>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/About/">About</a>
+      <a href="/jobs/medical-assistant/">Apply</a>
+    </div>
+  </nav>
 
-<h2>
-<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAS66m2VUMTNMV0Q4U1BXM1pKSExDQk9TR0xPSUhNVy4u&origin=QRCode">
-Employment Application
-</a>
-</h2>
+  <!-- JOB HEADER -->
+  <section>
+    <h1>Medical Assistant / Medical Office Specialist</h1>
+    <div class="job-card">
+      <p>
+        Thank you for your interest in joining Valley Kidney Center.  
+        We are looking for a compassionate, organized, and patient‑focused Medical Assistant / Medical Office Specialist  
+        to support our clinical and front‑office operations.
+      </p>
 
-<iframe src="https://1drv.ms/w/c/ac64913e48bdc4ea/IQQAMS92oEcxSLb4RHQaDwVpAXegJ-mf5qOEAULoompMI30"
-        width="700" height="800" frameborder="0" scrolling="no"></iframe>
+      <h2>Apply Online</h2>
+      <p>Click below to complete the official application form:</p>
 
-<iframe src="https://1drv.ms/w/c/ac64913e48bdc4ea/IQRU3DTc30urQY6IZsAgxeLbAcdLjhrTBhEL9IOOcvVSorA"
-        width="700" height="800" frameborder="0" scrolling="no"></iframe>
+      <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAS66m2VUMTNMV0Q4U1BXM1pKSExDQk9TR0xPSUhNVy4u&origin=QRCode">
+        Employment Application
+      </a>
+    </div>
 
-<br>
+    <!-- DOCUMENT IFRAME 1 -->
+    <iframe
+      src="https://1drv.ms/w/c/ac64913e48bdc4ea/IQQAMS92oEcxSLb4RHQaDwVpAXegJ-mf5qOEAULoompMI30"
+      width="700"
+      height="800"
+      scrolling="no">
+    </iframe>
+
+    <!-- DOCUMENT IFRAME 2 -->
+    <iframe
+      src="https://1drv.ms/w/c/ac64913e48bdc4ea/IQRU3DTc30urQY6IZsAgxeLbAcdLjhrTBhEL9IOOcvVSorA"
+      width="700"
+      height="800"
+      scrolling="no">
+    </iframe>
+
+  </section>
+
+  <footer>
+    © 2026 Valley Kidney Center – Savita Koolwal MD. All rights reserved.
+  </footer>
 
 </body>
 </html>
