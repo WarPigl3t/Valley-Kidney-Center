@@ -144,6 +144,8 @@
       border: 0;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      width: 700px;
+      height: 800px;
     }
 
     footer {
@@ -153,6 +155,42 @@
       color: #666;
       font-size: 14px;
     }
+
+    /* MOBILE RESPONSIVE FIXES */
+    @media (max-width: 768px) {
+
+      nav {
+        padding: 14px 20px;
+      }
+
+      nav .nav-links a {
+        padding: 10px 16px;
+        font-size: 14px;
+        margin-left: 10px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .job-card {
+        padding: 25px;
+        font-size: 16px;
+      }
+
+      iframe {
+        width: 100% !important;
+        height: auto;
+      }
+
+      .iframe-wrapper {
+        gap: 20px;
+      }
+
+      section {
+        margin: 50px auto;
+      }
+    }
   </style>
 
   <!-- Google Jobs Structured Data -->
@@ -161,7 +199,7 @@
     "@context": "https://schema.org/",
     "@type": "JobPosting",
     "title": "Medical Assistant / Medical Office Specialist",
-    "description": "Valley Kidney Center is seeking a Medical Assistant / Medical Office Specialist to support patient care, clinical workflow, and front office operations. Responsibilities include vital signs, chart preparation, patient communication, scheduling, and assisting clinical staff.",
+    "description": "Valley Kidney Center is seeking a Medical Assistant / Medical Office Specialist to support patient care, clinical workflow, and front office operations.",
     "datePosted": "2025-01-25",
     "validThrough": "2025-12-31",
     "employmentType": ["FULL_TIME", "PART_TIME"],
@@ -236,15 +274,11 @@
     <div class="iframe-wrapper">
       <iframe
         src="https://1drv.ms/w/c/ac64913e48bdc4ea/IQQAMS92oEcxSLb4RHQaDwVpAXegJ-mf5qOEAULoompMI30"
-        width="700"
-        height="800"
         scrolling="no">
       </iframe>
 
       <iframe
         src="https://1drv.ms/w/c/ac64913e48bdc4ea/IQRU3DTc30urQY6IZsAgxeLbAcdLjhrTBhEL9IOOcvVSorA"
-        width="700"
-        height="800"
         scrolling="no">
       </iframe>
     </div>
