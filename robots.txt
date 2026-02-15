@@ -1,1 +1,4 @@
-google-site-verification=O89cSkrLFB5agoDsohZTTqxHaRDsW0GHebSEiXBcmFU
+User-agent: *
+Allow: /
+
+Sitemap: https://valleykidneycenter.netlify.app/sitemap.xml
