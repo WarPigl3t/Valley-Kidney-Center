@@ -110,11 +110,40 @@
       text-align: center;
     }
 
+    /* Modern Apply Button */
+    .apply-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #004aad, #007bff);
+      color: white;
+      padding: 14px 32px;
+      border-radius: 40px;
+      font-size: 18px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+      transition: 0.25s ease;
+      margin-top: 20px;
+    }
+
+    .apply-button:hover {
+      background: linear-gradient(135deg, #003a8c, #0066d6);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.22);
+    }
+
+    /* Centered iframe stack */
+    .iframe-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
     iframe {
       border: 0;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      margin-top: 30px;
     }
 
     footer {
@@ -189,6 +218,7 @@
   <!-- JOB HEADER -->
   <section>
     <h1>Medical Assistant / Medical Office Specialist</h1>
+
     <div class="job-card">
       <p>
         Thank you for your interest in joining Valley Kidney Center.  
@@ -196,29 +226,28 @@
         to support our clinical and front‑office operations.
       </p>
 
-      <h2>Apply Online</h2>
-      <p>Click below to complete the official application form:</p>
-
-      <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAS66m2VUMTNMV0Q4U1BXM1pKSExDQk9TR0xPSUhNVy4u&origin=QRCode">
-        Employment Application
+      <a class="apply-button"
+         href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAS66m2VUMTNMV0Q4U1BXM1pKSExDQk9TR0xPSUhNVy4u&origin=QRCode">
+         Apply Online
       </a>
     </div>
 
-    <!-- DOCUMENT IFRAME 1 -->
-    <iframe
-      src="https://1drv.ms/w/c/ac64913e48bdc4ea/IQQAMS92oEcxSLb4RHQaDwVpAXegJ-mf5qOEAULoompMI30"
-      width="700"
-      height="800"
-      scrolling="no">
-    </iframe>
+    <!-- CENTERED IFRAMES -->
+    <div class="iframe-wrapper">
+      <iframe
+        src="https://1drv.ms/w/c/ac64913e48bdc4ea/IQQAMS92oEcxSLb4RHQaDwVpAXegJ-mf5qOEAULoompMI30"
+        width="700"
+        height="800"
+        scrolling="no">
+      </iframe>
 
-    <!-- DOCUMENT IFRAME 2 -->
-    <iframe
-      src="https://1drv.ms/w/c/ac64913e48bdc4ea/IQRU3DTc30urQY6IZsAgxeLbAcdLjhrTBhEL9IOOcvVSorA"
-      width="700"
-      height="800"
-      scrolling="no">
-    </iframe>
+      <iframe
+        src="https://1drv.ms/w/c/ac64913e48bdc4ea/IQRU3DTc30urQY6IZsAgxeLbAcdLjhrTBhEL9IOOcvVSorA"
+        width="700"
+        height="800"
+        scrolling="no">
+      </iframe>
+    </div>
 
   </section>
 
