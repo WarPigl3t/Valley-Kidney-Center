@@ -1,106 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valley Kidney Center - Savita Koolwal MD</title>
 
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="O89cSkrLFB5agoDsohZTTqxHaRDsW0GHebSEiXBcmFU" />
-
-    <title>Employment Application - Valley Kidney Center</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            text-align: center;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-        label {
-            display: block;
-            margin: 1rem 0 0.5rem;
-        }
-    </style>
-
-    <!-- Google Jobs Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "JobPosting",
-      "title": "Medical Assistant / Medical Office Specialist",
-      "description": "Valley Kidney Center is seeking a Medical Assistant / Medical Office Specialist to support patient care, clinical workflow, and front office operations. Responsibilities include vital signs, chart preparation, patient communication, scheduling, and assisting clinical staff.",
-      "datePosted": "2025-01-25",
-      "validThrough": "2025-12-31",
-      "employmentType": ["FULL_TIME", "PART_TIME"],
-      "hiringOrganization": {
-        "@type": "Organization",
-        "name": "Valley Kidney Center",
-        "sameAs": "https://valleykidneycenter.netlify.app/"
-      },
-      "jobLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "214 W. Sam Houston Blvd. Suite B",
-          "addressLocality": "Pharr",
-          "addressRegion": "TX",
-          "postalCode": "78577",
-          "addressCountry": "US"
-        }
-      },
-      "baseSalary": {
-        "@type": "MonetaryAmount",
-        "currency": "USD",
-        "value": {
-          "@type": "QuantitativeValue",
-          "minValue": 8.00,
-          "maxValue": 12.00,
-          "unitText": "HOUR"
-        }
-      },
-      "identifier": {
-        "@type": "PropertyValue",
-        "name": "ValleyKidneyCenter",
-        "value": "1"
-      },
-      "directApply": true,
-      "url": "https://valleykidneycenter.netlify.app/"
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    </script>
 
+    body {
+      font-family: "Inter", Arial, sans-serif;
+      background: linear-gradient(135deg, #eef2f7, #ffffff);
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.7);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    nav .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: #004aad;
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+
+    /* STRONGER NAV BUTTONS */
+    nav .nav-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #0f1c3f;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 12px 22px;
+      border-radius: 30px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      transition: 0.25s ease;
+    }
+
+    nav .nav-links a:hover {
+      background: #004aad;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+      transform: translateY(-3px);
+    }
+
+    /* HERO */
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: #0f1c3f;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #444;
+    }
+
+    /* SECTION WRAPPER */
+    section {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: #0f1c3f;
+      text-align: center;
+    }
+
+    /* SERVICES GRID */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+      font-size: 17px;
+    }
+
+    /* DOCTOR SECTION */
+    .doctor-card {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    /* WHY CHOOSE US */
+    .why-list div {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    /* LOCATION */
+    .location-box {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    /* FOOTER */
+    footer {
+      margin-top: 100px;
+      padding: 40px 20px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>Valley Kidney Center</h1>
-<p>
-214 W. Sam Houston Blvd. <br>
-Suite B <br>
-Pharr, Texas 78577<br>
-P: 956-971-9121
-</p>
+  <!-- NAVIGATION -->
+  <nav>
+    <a class="logo" href="/index.html">Valley Kidney Center – Savita Koolwal MD</a>
+    <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="/About/About/index.html">About</a>
+      <a href="/jobs/medical-assistant/index.html">Apply</a>
+    </div>
+  </nav>
 
-<h2>
-<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAS66m2VUMTNMV0Q4U1BXM1pKSExDQk9TR0xPSUhNVy4u&origin=QRCode">
-Employment Application
-</a>
-</h2>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="doctor-card">
+      <h1>Expert Nephrology Care in Pharr, Texas</h1>
+      <p>
+        At Valley Kidney Center, we provide compassionate, patient‑focused nephrology care to families across the RGV.
+        Our mission is to support long‑term kidney health through personalized treatment, education, and a commitment
+        to improving quality of life for every patient we serve.
+      </p>
+    </div>
+  </section>
 
-<iframe src="https://1drv.ms/w/c/ac64913e48bdc4ea/IQQAMS92oEcxSLb4RHQaDwVpAXegJ-mf5qOEAULoompMI30"
-        width="700" height="800" frameborder="0" scrolling="no"></iframe>
+  <!-- MEET THE DOCTOR -->
+  <section>
+    <h2>Meet the Doctor</h2>
+    <div class="doctor-card">
+      <strong>Dr. Savita Koolwal, MD</strong><br><br>
 
-<iframe src="https://1drv.ms/w/c/ac64913e48bdc4ea/IQRU3DTc30urQY6IZsAgxeLbAcdLjhrTBhEL9IOOcvVSorA"
-        width="700" height="800" frameborder="0" scrolling="no"></iframe>
+      Dr. Koolwal is a board‑certified nephrologist and internal medicine physician with 
+      <strong>over 44 years of medical experience</strong>. She has dedicated her career to caring for patients 
+      with kidney disease, hypertension, electrolyte disorders, and complex chronic conditions.<br><br>
 
-<br>
+      A graduate of medical school in 1982, Dr. Koolwal has spent decades providing renal care to families 
+      throughout the Rio Grande Valley. Patients value her for her thorough evaluations, clear communication, 
+      and commitment to long‑term kidney health.<br><br>
+
+      At Valley Kidney Center, Dr. Koolwal focuses on evidence‑based treatment, patient education, and 
+      individualized care plans designed to support each patient’s overall well‑being.
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section>
+    <h2>Services We Provide</h2>
+    <div class="services-grid">
+      <div class="service-card">Chronic Kidney Disease Management</div>
+      <div class="service-card">Dialysis Coordination & Support</div>
+      <div class="service-card">Hypertension Management</div>
+      <div class="service-card">Electrolyte & Fluid Disorders</div>
+      <div class="service-card">Kidney Stone Evaluation</div>
+      <div class="service-card">Diabetic Kidney Care</div>
+    </div>
+  </section>
+
+  <!-- WHY PATIENTS CHOOSE US -->
+  <section>
+    <h2>Why Patients Choose Us</h2>
+    <div class="doctor-card">
+      <div class="why-list">
+        <div>Personalized treatment plans tailored to each patient’s needs</div>
+        <div>Compassionate, patient‑centered care</div>
+        <div>Serving the Rio Grande Valley community for decades</div>
+        <div>Same‑week appointments available</div>
+        <div>Clear communication and long‑term kidney health support</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & HOURS -->
+  <section>
+    <h2>Location & Hours</h2>
+    <div class="location-box">
+      <strong>Valley Kidney Center – Savita Koolwal MD</strong><br><br>
+
+      214 W. Sam Houston Blvd. Suite B<br>
+      Pharr, Texas 78577<br><br>
+
+      <strong>Phone:</strong> 956-971-9121<br>
+      <strong>Fax:</strong> 956-283-0641<br><br>
+
+      Monday – Friday: 8:00 AM – 5:00 PM<br>
+      Closed Saturday & Sunday<br><br>
+
+      <strong>Find us on the map below:</strong>
+    </div>
+
+    <!-- LARGE SQUARE MAP -->
+    <div style="margin-top: 25px; max-width: 1100px; margin-left: auto; margin-right: auto;">
+      <iframe
+        width="100%"
+        height="500"
+        style="border:0; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d541.616824934598!2d-98.184889!3d26.194927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8665a9e2c3e3b0e9%3A0x8c7a7e9e9d9b6c0!2s214%20W%20Sam%20Houston%20Blvd%20B%2C%20Pharr%2C%20TX%2078577!5e0!3m2!1sen!2sus!4v1700000000000">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Valley Kidney Center – Savita Koolwal MD. All rights reserved.
+  </footer>
 
 </body>
 </html>
